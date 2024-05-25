@@ -21,15 +21,11 @@ public class Palindrome {
         }
 
         // Check if the reversed number is equal to the original number
-        if (originalNum == reversedNum) {
-            return true;
-        } else {
-            return false;
-        }
+        return originalNum == reversedNum;
     }
 //-------------------------------------------------- SEMI REVERSAL O(log10(n)) --------------------------------------------------
     public static boolean semiReverse(int x) {
-        // X cannot be negative | X cannot end in 0 | X cannot be 0
+        // X cannot be negative | X cannot end in 0 but does not count if the number is 0 (It would be a palindrome then (difference between 10 and 0 )
         if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
         }
@@ -57,6 +53,10 @@ public class Palindrome {
             EVEN DIGITS EXAMPLE
                 1221 -> x=12  revertedNum=12
                 x == 12 ✓
+            ODD DIGITS EXAMPLE
+                12321 -> x = 12  revertedNum == 123
+                revertedNum / 10 = 12
+                x == revertedNum
         */
         return x == revertedNumber || x == revertedNumber / 10;
     }
