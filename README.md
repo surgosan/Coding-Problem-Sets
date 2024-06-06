@@ -8,6 +8,8 @@ These are done in various languages such as Java, JavaScript, and Swift
 
 If a problem is done in one language, you can bet it is done in the others
 
+*Note that Swift is a few problems behind*
+
 ## Repository Structure
 
 Directories begin with the language used to program in
